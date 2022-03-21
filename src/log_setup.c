@@ -5,6 +5,7 @@
 #include <libnetfilter_log/libnetfilter_log.h>
 
 #include "callback.h"
+#include "log_setup.h"
 
 static struct nflog_handle *nfh;
 static struct nflog_g_handle *ngh;
