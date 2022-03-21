@@ -14,8 +14,6 @@ int main()
 {
 	signal(SIGINT, int_handler);
 
-	printf("--------------\ntest\n");
-
 	log_init();
 	log_handle();
 	log_uninit();
