@@ -38,21 +38,3 @@ int callback(struct nflog_g_handle *gh, struct nfgenmsg *nfmsg, struct nflog_dat
 
 	return 0;
 }
-
-void s()
-{
-	struct ip_endpoint *i = ip_add(&list, 0xDEADBEEF);
-	port_add(i, 1234);
-	port_add(i, 5678);
-	port_add(i, 3456);
-	port_add(i, 3456);
-	port_add(i, 3456);
-
-	i = ip_add(&list, 0xAAAAAAAA);
-	port_add(i, 1234);
-	port_add(i, 5678);
-	port_add(i, 3456);
-	port_add(i, 3456);
-	port_add(i, 3456);
-	print();
-}
