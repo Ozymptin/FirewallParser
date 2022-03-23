@@ -17,9 +17,6 @@ struct ip_endpoint {
 	struct port_info *port;
 };
 
-struct list_node *list_add(struct list_node **head, uint32_t size);
-void list_remove(struct list_node *node);
-
 struct ip_endpoint *ip_add(struct ip_endpoint **head, uint32_t ip);
 struct ip_endpoint *ip_remove(struct ip_endpoint **head, uint32_t ip);
 struct ip_endpoint *ip_find_by_ip(struct ip_endpoint *head, uint32_t ip);

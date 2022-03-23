@@ -3,7 +3,7 @@
 
 #include "linked_list.h"
 
-struct list_node *list_add(struct list_node **head, uint32_t size)
+static struct list_node *list_add(struct list_node **head, uint32_t size)
 {
 	struct list_node *ptr = *head;
 	if (ptr == NULL) {
@@ -21,7 +21,7 @@ struct list_node *list_add(struct list_node **head, uint32_t size)
 	return ptr->next;
 }
 
-void list_remove(struct list_node *node)
+static void list_remove(struct list_node *node)
 {
 
 }
