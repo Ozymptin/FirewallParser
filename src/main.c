@@ -12,11 +12,13 @@ void int_handler(int sig)
 
 int main()
 {
-	signal(SIGINT, int_handler);
+	/*signal(SIGINT, int_handler);
 
 	log_init();
 	log_handle();
-	log_uninit();
+	log_uninit();*/
+#include "callback.h"
+	s();
 
 	return 0;
 }
